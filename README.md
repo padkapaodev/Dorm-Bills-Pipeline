@@ -47,4 +47,3 @@ An end-to-end Data Engineering pipeline built on **Databricks** using **PySpark*
 * **Zero Hardcoded Credentials:** Database credentials and JDBC connection strings are retrieved dynamically via `dbutils.secrets.get(scope="project_key", ...)`.
 * **Idempotent Data Pipelines:** All writes to Delta tables rely on `MERGE INTO` (Upsert) logic, ensuring pipelines can be safely re-run without creating duplicate rows.
 * **Modular Codebase:** Common table maintenance functions and Delta merge operations are centralized within `project_tools.py` for maintainability.
-```
